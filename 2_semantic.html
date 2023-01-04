@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c756527c45.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        body{
+            width: 90%;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+        }
+        .background{
+            height: 500px;
+            background:url(../Module_04/light.jpg)no-repeat center center/cover;
+        }
+        
+        .background>h3{
+            position: relative;
+            color: rgba(255, 255, 255, 0.73);
+            padding: 50px 0px 10px 30px;
+            /* border: 2px dotted; */
+            width: 250px;
+            left: -250px;
+            visibility: hidden;
+            animation: me 2s infinite;
+            animation-delay: 1s;
+            animation-duration: 20s;
+        }
+        @keyframes me{
+            0%{left: -250px;visibility: hidden;}
+            10%{left: 0;visibility: visible;}
+            20%{left: 0;visibility: visible;}
+            30%{left: 0;visibility: visible;}
+            40%{left: 0;visibility: visible;}
+            50%{left: 0;visibility: visible;}
+            60%{left: 0;visibility: visible;}
+            70%{left: 0;visibility: visible;}
+            80%{left: -250px;visibility: visible;}
+            90%{left: -250px;visibility: visible;}
+            100%{left: -250px;visibility: visible;}
+        }
+        /* .background>b{
+            display: block;
+            color: rgb(5, 165, 45);
+            text-shadow: 1px 1px 1px black;
+            padding-left: 30px;
+            position: relative;
+            visibility: hidden;
+            animation: my 2s infinite;
+            animation-delay: 1s;
+            animation-duration: 10s;
+        }
+        @keyframes my{
+            0%{left: 0%;visibility: hidden;}
+            10%{left: 0;visibility: visible;}
+            20%{left: 0;visibility: visible;}
+            30%{left: 0;visibility: visible;}
+            40%{left: 0;visibility: visible;}
+            50%{left: 100%;visibility: visible;}
+            60%{left: 100%;visibility: visible;}
+            70%{left: 100%;visibility: visible;}
+            80%{left: 100%;visibility: visible;}
+            90%{left: 100%;visibility: visible;}
+            100%{left: 100%;visibility: visible;}
+        } */
+        .background>b{
+            position: relative;
+            width: 500px;
+            visibility: hidden;
+            overflow: hidden;
+            /* border:1px solid white */
+        }
+        .background>b::after{
+            width: 100%;
+            content: "We have various kinds of Phita.";
+            display: inline-block;
+            color: rgb(200, 196, 196);
+            text-shadow: 1px 1px 1px black;
+            padding-left: 30px;
+            position: absolute;
+            visibility: hidden;
+            animation: my1 2s infinite;
+            animation-delay: 1s;
+            animation-duration: 15s;
+            overflow: hidden;
+        }
+        @keyframes my1{
+            0%{left: 300%;visibility: visible;}
+            10%{left: 0;visibility: visible;}
+            20%{left: 0;visibility: visible;}
+            30%{left: 0;visibility: visible;}
+            40%{left: 0;visibility: visible;}
+            50%{left: 300%;visibility: hidden;}
+            60%{left: 300%;visibility: hidden;}
+            70%{left: 300%;visibility: hidden;}
+            80%{left: 300%;visibility: hidden;}
+            90%{left: 300%;visibility: hidden;}
+            100%{left: 300%;visibility: hidden;}
+        }
+        .background>b::before{
+            width: 100%;
+            content: "Let us make your day charmin.";
+            display: inline-block;
+            color: rgb(200, 196, 196);
+            text-shadow: 1px 1px 1px black;
+            padding-left: 30px;
+            position: absolute;
+            visibility: hidden;
+            animation: my2 5s infinite;
+            animation-delay: 1s;
+            animation-duration: 15s;
+            transition: all .5s;
+        }
+        @keyframes my2{
+            0%{left: 0%;visibility: visible;}
+            10%{left: 300%;visibility: hidden;}
+            20%{left: 300%;visibility: hidden;}
+            30%{left: 300%;visibility: hidden;}
+            40%{left: 300%;visibility: hidden;}
+            50%{left: 0;visibility: visible;}
+            60%{left: 0;visibility: visible;}
+            70%{left: 0;visibility: visible;}
+            80%{left: 0;visibility: visible;}
+            90%{left: 0;visibility: visible;}
+            100%{left: 0;visibility: hidden;}
+        }
+        section{
+            position: relative;
+            width: 100%;
+            /* height: 1000px; */
+            font-size: 20px;
+            text-transform: uppercase;
+            text-align: center;
+            background-color: lightyellow;
+        }
+        section>h4{
+            padding: 15px;
+        }
+        .main{
+            width: 100%;
+            display: flex;
+            flex: 1;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            /* align-items: justify; */
+        }
+        .main>div{
+            width: 550px;
+            height: 300px;
+            border: 2px solid;
+            margin-bottom: 20px;
+            
+        }
+        .main>div:nth-child(1){
+            background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg6KxQEJN_X3n9HxgCeW5rVPNVOvRvorTV6J1t9EpYj9k8vtSBaNJuuJfCHEHKsVDG8do&usqp=CAU" )no-repeat center center/cover;
+
+        }
+        .main>div:nth-child(2){
+            background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6RiqPFdrnIrflmp6gobXP9hwLLWrEFTgTe54SkfX2h3bzMb-X9XpvPDy1D7pryOPS228&usqp=CAU"  )no-repeat center center/cover;
+            background-attachment: fixed;
+            overflow: hidden;
+
+        }
+        .main>div:nth-child(3){
+            background:url("https://wfg32p.s3.amazonaws.com/media/dishes/vapa_pitha_5490.jpg" )no-repeat center center/cover;
+
+        }
+        .main>div:nth-child(4){
+            background:url("https://zuranazrecipe.com/wp-content/uploads/2015/11/Chitoi-Pitha.jpg" )no-repeat center center/cover;
+
+        }
+        .main>div:nth-child(5){
+            background:url("https://bongong.com/images/recipes/Pathisapta/pic13_1230902669_center.jpg" )no-repeat center center/cover;
+
+        }
+        .main>div:nth-child(6){
+            background: url("http://2.bp.blogspot.com/-UKraYuqPJbw/T9oHHSNoN2I/AAAAAAAABy8/dPiecXk0zSk/s1600/DSCN0885+-+Copy.JPG")no-repeat center center/cover;
+        }
+
+        /* Footer starts here */
+        footer{
+            width: 100%;
+            height: 200px;
+            display:flex;
+            flex-flow: row;
+            justify-content: space-between;
+            padding: 20px;
+            background: rgb(10, 7, 50);
+            color: white;
+            align-items: center;
+        }
+        footer>div>h5{
+            padding: 0 0px 10px ;
+            font-size: 15px;
+        }
+        footer>div>ul>li>a{
+            line-height: 30px;
+            color: wheat;
+            padding: 10px;
+        }
+        footer>div>ul>li>i{
+            line-height: 30px;
+            color: rgb(18, 26, 255);
+
+        }
+       
+        </style>
+    
+</head>
+<body>
+    <header>
+        <h3><a href="#">UserName</a></h3>
+        <nav>
+            <ul>
+                <li><a href="/Programing Hero/Milestone_01/Module_04/2_semantic.html" class="href">Home</a></li>
+                <li><a href="/Programing Hero/Milestone_01/Module_04/01_Media.html">Media</a></li>
+                <li class="table"><a href="/Programing Hero/Milestone_01/Module_04/4_table.html">Table
+                    <ul class="next">
+                        <li><a href="#">First</a></li>
+                        <li><a href="#">Second</a></li>
+                        <li><a href="#">Third</a></li>
+                        <li><a href="#">Fourth</a></li>
+                    </ul>
+                </a></li>
+                <li><a href="/Programing Hero/Milestone_01/Module_03/My-third-repo/index.html">Image</a></li>
+                <li><a href="/programing Hero/Milestone_01/Module_04/3_Form.html">Form</a></li>
+            </ul>
+        </nav>
+        <div class="background">
+            <h3>Weclome in out PitaGhor</h3>
+
+            <b>We have various kinds of Pitha.</b>
+        </div>
+        
+    </header>
+    <section>
+        <h4>display</h4>
+        <div class="main">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div> </div>
+            <div><span></span></div>
+        </div>
+    </section>
+    <footer>
+        <div><h5>copyright:bangladesh.pitha@gmail.com</h5></div>
+        <div>
+            <h5>Follow us on:</h5>
+            <ul>
+                <li>
+                    <i class="fa-brands fa-facebook"></i>
+                    <a href="http://www.facebook.com">facebook</a>
+                </li>
+                <li>
+                    <i class="fa-brands fa-twitter"></i>
+                    <a href="http://www.twitter.com">Twitter</a>
+                </li>
+                <li>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <a href="http://www.whatsapp.com">whatsapp</a>
+                </li>
+                
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

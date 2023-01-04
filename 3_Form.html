@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Html Form tag</title>
+    <style>
+        body{
+            padding: 0px 15px 20px 15px;
+        }
+       form{
+        padding: 20px 15px 20px 15px;
+       }
+        fieldset{
+            padding: 20px 15px;
+            margin-top: 25px;
+            border-color: rgb(0, 85, 255);
+        }
+        fieldset input{
+            padding: 15px 0;
+        }
+        fieldset span{
+            padding: 40px 10px;
+        }
+        legend{
+            padding: 20px 15px;
+            color: rgb(50, 50, 181);
+            padding-bottom: 10px;
+        }
+        
+        span{
+            padding: 40px 15px;
+        }
+        #name{
+            margin: 10px 0;
+        }
+        #email{
+            margin: 10px 0;
+        }
+        #phone{
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h3><a href="#">UserName</a></h3>
+        <nav>
+            <ul>
+                <li><a href="/Programing Hero/Milestone_01/Module_04/2_semantic.html" class="href">Home</a></li>
+                <li><a href="/Programing Hero/Milestone_01/Module_04/01_Media.html">Media</a></li>
+                <li><a href="/Programing Hero/Milestone_01/Module_04/4_table.html">Table</a></li>
+                <li><a href="/Programing Hero/Milestone_01/Module_03/My-third-repo/index.html">Image</a></li>
+                <li><a href="/programing Hero/Milestone_01/Module_04/3_Form.html">Form</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>Welcome to Pitha Gora.</h2>
+    <form action="">
+        <label for="name">
+            <span>Your Name </span>
+            <input type="text" id="name">
+        </label>
+        <br>
+        <label for="email">
+            <span>Your Email</span>
+            <input type="email" id="email">
+        </label>
+        <br>
+        <label for="phone">
+            <span>Phone num</span>
+            <input type="number" name="phone" id="phone">
+        </label>
+        <fieldset>
+            <legend>You have to choose one Phita</legend>
+                <label for="chitoy">
+                    <input type="radio" name="pitha" id="chitoy"><span>chitoy Phita</span>
+                </label><br>
+                <label for="bhapa">
+                    <input type="radio" name="pitha" id="bhapa"><span>Bhapa Phita</span>
+                </label><br>
+                <label for="Feaul">
+                    <input type="radio" name="pitha" id="Feaul"><span>Feaul phita</span>
+                </label><br>
+                <label for="pati">
+                    <input type="radio" name="pitha" id="pati"><span>Patisapta Pitha</span>
+                </label><br>
+            </legend>
+        </fieldset>
+        <fieldset>
+            <legend>You can choose multiple type of Borta</legend>
+            <label for="donia">
+                <input type="checkbox" name="donia" id="donia"><span>Donia Borta</span>
+            </label>
+            <br>
+            <label for="sotki">
+                <input type="checkbox" name="sotki" id="sotki"><span>SSorisa Borta</span>
+            </label>
+            <br>
+            <label for="Sorisa">
+                <input type="checkbox" name="Sorisa" id="donia"><span>Sorisa Borta</span>
+            </label>
+            <br>
+            <label for="Morich">
+                <input type="checkbox" name="Morich" id="Morich"><span>Morich Borta</span>
+            </label>
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Let us know a feedback</legend>
+            <textarea name="" id="" cols="50" rows="6"></textarea>
+        </fieldset>
+        <input type="reset" value="reset">
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
